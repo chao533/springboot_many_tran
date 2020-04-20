@@ -14,11 +14,6 @@ import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.sql.DataSource;
 
-/**
- * @Description TODO
- * @Author bingfeng
- * @Date 2019/11/20 17:09
- */
 @Configuration
 @MapperScan(basePackages = "com.kang.mapper.master", sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterDataSourcesConfig {

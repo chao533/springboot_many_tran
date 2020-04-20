@@ -3,11 +3,6 @@ package com.kang.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/**
- * @Description TODO
- * @Author bingfeng
- * @Date 2019/11/20 17:06
- */
 @ConfigurationProperties(prefix = "spring.datasource.slave")
 public class SlaveDBConfig {
 

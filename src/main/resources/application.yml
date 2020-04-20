@@ -4,7 +4,7 @@ server:
     uri-encoding: UTF-8
 spring:
   datasource:
-    # 网厨数据库
+    # 主数据源
     master:
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
@@ -12,7 +12,7 @@ spring:
       username: root
       password: 123456
 
-    # 厨币商城数据库
+    # 主数据源
     slave:
       driver-class-name: com.mysql.cj.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
