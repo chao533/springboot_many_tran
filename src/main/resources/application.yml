@@ -1,0 +1,26 @@
+server:
+  port: 8083
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  datasource:
+    # 网厨数据库
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbc-url: jdbc:mysql://47.105.189.247:3306/jyweb?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: 123456
+
+    # 厨币商城数据库
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+      jdbc-url: jdbc:mysql://192.168.0.100:11129/study_pad?autoReconnect=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: szdtoo123
+
+  # 分布式锁
+  jta:
+    # log-dir: classpath*:tx-logs
+    transaction-manager-id: txManager
